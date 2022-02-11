@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register"
-    android:background="@color/bg">
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/backarrowRegis"
@@ -37,13 +37,13 @@
         android:layout_height="40dp"
         android:layout_below="@id/hello"
         android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="25dp"
         android:background="@drawable/edit_text_border"
         android:gravity="start|center_vertical"
         android:hint=" Name"
         android:inputType="textPersonName"
-        android:paddingLeft="8dp"
-        android:layout_marginTop="100dp"/>
+        android:paddingLeft="8dp" />
 
     <EditText
         android:id="@+id/reg_mail"

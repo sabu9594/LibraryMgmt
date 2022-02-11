@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bg"
+        android:background="@color/white"
         android:orientation="vertical">
 
 
@@ -31,11 +31,12 @@
                 android:textSize="25sp" />
 
             <ImageView
-                android:id="@+id/menuRegis"
+                android:id="@+id/logoutmenu"
                 android:layout_width="50dp"
                 android:layout_height="40dp"
                 android:layout_alignParentEnd="true"
                 android:layout_gravity="end"
+                android:onClick="logout"
                 android:src="@drawable/logout" />
         </RelativeLayout>
 
@@ -44,7 +45,6 @@
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:orientation="vertical"
-
             >
 
             <LinearLayout
@@ -69,6 +69,7 @@
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/cardviewcolor"
                         app:cardCornerRadius="8dp"
+                        android:onClick="addBooks"
                         app:cardElevation="8dp">
 
                         <RelativeLayout
@@ -105,7 +106,8 @@
                         android:layout_weight="1"
                         app:cardBackgroundColor="@color/cardviewcolor"
                         app:cardCornerRadius="8dp"
-                        app:cardElevation="8dp">
+                        app:cardElevation="8dp"
+                        android:onClick="viewBooks">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
@@ -170,7 +172,8 @@
                             android:layout_weight="1"
                             app:cardBackgroundColor="@color/cardviewcolor"
                             app:cardCornerRadius="8dp"
-                            app:cardElevation="8dp">
+                            app:cardElevation="8dp"
+                            android:onClick="getPosition">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"
@@ -206,7 +209,8 @@
                             android:layout_weight="1"
                             app:cardBackgroundColor="@color/cardviewcolor"
                             app:cardCornerRadius="8dp"
-                            app:cardElevation="8dp">
+                            app:cardElevation="8dp"
+                            android:onClick="issueBooks">
 
                             <RelativeLayout
                                 android:layout_width="match_parent"

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBooks">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/nunito"
+            android:text="Add Books Details"
+            android:textColor="@color/black"
+            android:textSize="25sp">
+
+        </TextView>
+    </RelativeLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_marginTop="20dp">
+
+           <EditText
+               android:id="@+id/reg_no"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_below="@id/hello"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="50dp"
+               android:layout_marginRight="25dp"
+               android:background="@drawable/edit_text_border"
+               android:gravity="start|center_vertical"
+               android:hint="Accession no"
+               android:inputType="textPersonName"
+               android:paddingLeft="8dp" />
+
+           <EditText
+               android:id="@+id/book_title"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_below="@id/hello"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="25dp"
+               android:background="@drawable/edit_text_border"
+               android:gravity="start|center_vertical"
+               android:hint="Book Title"
+               android:inputType="textPersonName"
+               android:paddingLeft="8dp" />
+
+           <EditText
+               android:id="@+id/book_author"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_below="@id/hello"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="25dp"
+               android:background="@drawable/edit_text_border"
+               android:gravity="start|center_vertical"
+               android:hint="Book Author"
+               android:inputType="textPersonName"
+               android:paddingLeft="8dp" />
+
+           <EditText
+               android:id="@+id/publisher"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_below="@id/hello"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="25dp"
+               android:background="@drawable/edit_text_border"
+               android:gravity="start|center_vertical"
+               android:hint="Publisher"
+               android:inputType="textPersonName"
+               android:paddingLeft="8dp" />
+
+           <EditText
+               android:id="@+id/description"
+               android:layout_width="match_parent"
+               android:layout_height="120dp"
+               android:layout_below="@id/hello"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="25dp"
+               android:background="@drawable/edit_text_border"
+               android:gravity="start"
+               android:hint="Description"
+               android:inputType="textMultiLine"
+               android:paddingLeft="8dp" >
+
+           </EditText>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp"
+               android:background="@color/white">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="40dp"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="10dp"
+               android:text="Category :"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               >
+
+           </TextView>
+
+           <Spinner
+               android:id="@+id/xml_spin"
+               android:layout_width="150dp"
+               android:layout_height="40dp"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="25dp">
+
+           </Spinner>
+
+           </LinearLayout>
+
+           <RadioGroup
+               android:id="@+id/radioGroupGender"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginLeft="25dp"
+               android:layout_marginTop="10dp"
+               android:layout_marginRight="25dp"
+               android:gravity="start"
+               android:orientation="horizontal"
+               app:layout_constraintTop_toBottomOf="@id/xml_spin">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:paddingEnd="10dp"
+                   android:text="Acquisition:"
+                   android:textColor="@color/black"
+                   android:textSize="20sp"
+                   android:textStyle="bold" />
+
+               <RadioButton
+                   android:id="@+id/radioMale"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingStart="10dp"
+                   android:paddingEnd="10dp"
+                   android:text="Purchased"
+                   android:textColor="@color/black"
+                   android:textSize="17sp" />
+
+               <RadioButton
+                   android:id="@+id/radioFemale"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingStart="10dp"
+                   android:text="Gifted"
+                   android:textColor="@color/black"
+                   android:textSize="17sp" />
+           </RadioGroup>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+               android:layout_marginTop="50dp">
+
+               <Button
+                   android:id="@+id/login_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/custom_btn1"
+                   android:text="Add"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginEnd="10dp" />
+
+               <Button
+                   android:id="@+id/reg_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/custom_btn1"
+                   android:text="Clear"
+                   android:textColor="@color/black"
+                   android:layout_weight="1"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginEnd="20dp"
+                  />
+
+           </LinearLayout>
+
+
+
+
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
